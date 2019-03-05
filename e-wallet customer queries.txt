@@ -1,0 +1,135 @@
+mutation {
+createCustomer(input:{name:"Rajpeer", 
+   email:"raj@nimbusray.com", 
+   phone:"8861786613", 
+   kycID:"null", 
+   kycStatus:"null", 
+   aadhar:"1234erdf", 
+   passport:"wewqee"
+   address:"some address",
+ 	 aadharStatus:"null", 
+   passportStatus:"null", 
+   addressStatus:"null",
+}){
+   name
+   email
+   phone
+   kycID
+   kycStatus
+   aadhar
+   passport
+   address
+ 	aadharStatus
+   passportStatus
+   addressStatus
+ }
+}
+
+
+
+
+//update
+
+mutation {
+updateCustomer(_id:"5c6fa8aaa1aac83a94aa36de",input:{name:"Rajpeer", 
+   email:"raj@nimbusray.com", 
+   phone:"8861786613", 
+   kycID:"null", 
+   kycStatus:"null", 
+   aadhar:"1234erdf", 
+   passport:"wewqee",
+   address:"some address",
+ 	 aadharStatus:"verified", 
+   passportStatus:"not verified", 
+   addressStatus:"verified",
+}){
+  _id
+   name
+   email
+   phone
+   kycID
+   kycStatus
+   aadhar
+   passport
+   address
+ 	aadharStatus
+   passportStatus
+   addressStatus
+ }
+}
+
+
+//get individual customer
+
+
+{
+getCustomer(_id:"5c6fa8aaa1aac83a94aa36de"){
+  _id
+   name
+   email
+   phone
+   kycID
+   kycStatus
+   aadhar
+   passport
+   address
+ 	aadharStatus
+   passportStatus
+   addressStatus
+ }
+
+mutation {
+deleteCustomer(_id:"5c74c05dee0c8a59f22819e4"){
+  _id
+ }
+}
+
+
+
+
+
+{
+  "data": {
+    "allCustomers": [
+      {
+        "_id": "5c74c67cee0c8a59f22819e5"
+      },
+      {
+        "_id": "5c74d525ee0c8a59f22819e6"
+      },
+      {
+        "_id": "5c74e0ccee0c8a59f22819e7"
+      },
+      {
+        "_id": "5c750637ee0c8a59f22819e8"
+      },
+      {
+        "_id": "5c7509a3ee0c8a59f22819e9"
+      },
+      {
+        "_id": "5c751185ee0c8a59f22819ea"
+      }
+    ]
+  }
+}
+
+
+
+mutation{
+        createRequest(input:{kycId:"NRKYC19B1688",requester:"e-wallet",requestedOn:"25/2/2019",respondedOn:"null",
+        kycStatus:"null",aadhar:"5462 2364 1245",passport:"456789",
+        phone:"987654"}){
+          kycStatus
+          aadhar
+          phone
+          passport
+        }
+}
+
+
+
+
+
+TypeError: Cannot read property 'kycStatus' of null
+    at eval 
+}

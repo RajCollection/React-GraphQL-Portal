@@ -1,0 +1,337 @@
+.App {
+  text-align: center;
+}
+
+.primaryColor{
+  color: #97c95d;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: #f8f7f3;
+}
+
+.logoDiv{
+  /* border: 1px solid red; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 32%;
+}
+
+.loginText{
+  float: left;
+  color: #7b7b7b;
+  font-size: 16px;
+}
+
+.cardStyle{
+  /* border-radius: 6px; */
+  width: 22rem;
+}
+
+.headerText{
+  color: #97c95d;
+  font-weight: bold;
+  /* float: left; */
+  font-size: 22px;
+}
+
+.cardDiv{
+  /* border: 1px solid blue; */
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  height: 65%;
+  text-align: center;
+}
+
+.flexcenter {
+  display: flex;
+  flex-direction: column!important;
+  justify-content: center!important;
+  align-items: center!important;
+}
+
+.cardCol{
+  height: 100%;
+}
+
+.loginCard{
+  height: 300px;
+}
+
+.passwordCol{
+  /* margin-top: -20px; */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.loginInput:focus{
+  border-bottom: 1px solid #97c95d!important;
+  box-shadow: none!important;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
+.md-form input[type=text]:focus:not([readonly]) + label, .md-form input[type=password]:focus:not([readonly]) + label, .md-form input[type=email]:focus:not([readonly]) + label, .md-form input[type=url]:focus:not([readonly]) + label, .md-form input[type=time]:focus:not([readonly]) + label, .md-form input[type=date]:focus:not([readonly]) + label, .md-form input[type=datetime-local]:focus:not([readonly]) + label, .md-form input[type=tel]:focus:not([readonly]) + label, .md-form input[type=number]:focus:not([readonly]) + label, .md-form input[type=search-md]:focus:not([readonly]) + label, .md-form input[type=search]:focus:not([readonly]) + label, .md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: #97c95d;
+  /* color:light-green; */
+  /* font-weight: bold; */
+}
+
+.logOut{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 22px;
+}
+
+.navbarTop{
+  background-color: #97c95d!important;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*homecss*/
+.homeWrapper{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: #f8f7f3;
+}
+.home-wrapper{
+  /* border: 1px solid red; */
+  width: 100%;
+  position: absolute;
+  height: 90%;
+}
+
+.mainContent{
+  /* border: 1px solid red; */
+  height: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.addCustomerCard{
+  /* height: 80%; */
+  /* max-width: 80%; */
+}
+
+.customerListCard{
+  /* height: 80%; */
+  width: 100%;
+  max-height: 87%;
+  max-height: 450px;
+  overflow: auto;
+}
+
+.inputText{
+  color:#7B7B7B;
+  font-weight: none!important;
+}
+
+.card{
+  font-weight: none!important;
+}
+
+.customerFormData{
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.customerFormData:focus{
+  outline: none!important;
+  border: 2px solid #97c95d;
+}
+
+.addBtn{
+  width: 100%;
+}
+
+.listCard{
+  padding: 60px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(220,247,187,0.4)!important;
+}
+
+/*scroll*/
+
+
+.scrollbar{
+	/* margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px; */
+}
+
+/*
+ *  STYLE 5
+ */
+
+ #style-5::-webkit-scrollbar-track
+ {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+   background-color: #F5F5F5;
+ }
+ 
+ #style-5::-webkit-scrollbar
+ {
+   width: 10px;
+   background-color: #F5F5F5;
+ }
+ 
+ #style-5::-webkit-scrollbar-thumb
+ {
+   background-color: #ddd9d9;
+   
+   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                      color-stop(.5, rgba(255, 255, 255, .2)),
+              color-stop(.5, transparent), to(transparent)); */
+ }
+
+ .addButton{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  position: fixed!important;
+  right: 10px;
+  bottom: 10px;
+  color: #fff!important;
+  background-color: #97c95d!important;
+ }
+
+ .modal-header .close:focus {
+outline: none!important;
+}
+
+.modal-title{
+  font-size: 20px;
+  font-weight: bold;
+}
+.inputRow{
+  width: 100%;
+}
+.singleInput{
+  width: 50%;
+  display: inline-block;
+  /* padding-left: 10px; */
+  padding-right: 15px;
+}
+
+.textArea{
+  height: 125px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  /* padding-left: 0px; */
+  padding: .75rem 0.25rem!important;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: none!important;
+  margin-bottom: 1px!important;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+ 
+.listBorder{
+  border-bottom: 1px solid rgba(0,0,0,.125)!important;
+}
+
+.iconSize{
+  font-size: 24px;
+  color: #7b7b7b;
+}
+
+.verified{
+  color: green;
+  font-weight: bold;
+  /* font-size: 20px; */
+}
+
+.notVerified{
+  color: red;
+  font-weight: bold;
+}
+
+toggler-icon {
+  display: none!important;
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.noData{
+  height: 360px;
+  color: #7b7b7b;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 360px;
+}
+
+.verifiedLabel{
+  font-weight: bold;
+  color: green;
+  font-size: 18px;
+}
+
+.kycDetailsData{
+  margin-top: -5px;
+  border: none;
+}
+
+
